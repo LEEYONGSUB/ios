@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ThirdViewcontroller.swift
 //  TrustPay
 //
 //  Created by zerolive on 2017. 1. 15..
@@ -8,19 +8,18 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-    @IBOutlet weak var HomeImageView: UIImageView!
-
+class ThirdViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        HomeImageView.image = UIImage(named: "iu_headphone.png")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
 }
 
