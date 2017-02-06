@@ -18,9 +18,12 @@
 		1F43DD151E2B4F16008792CB /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43DD141E2B4F16008792CB /* FifthViewController.swift */; };
 		1F43DD171E2B5395008792CB /* iu_headphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F43DD161E2B5395008792CB /* iu_headphone.png */; };
 		1F43DD191E2B5A40008792CB /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43DD181E2B5A40008792CB /* RegistViewController.swift */; };
+		1F55F5E71E489D3100B1DDBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F55F5E61E489D3100B1DDBB /* GoogleService-Info.plist */; };
+		B9CED4675E8AF64262C84026 /* Pods_TrustPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12583115ABE99F03ED588D7E /* Pods_TrustPay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12583115ABE99F03ED588D7E /* Pods_TrustPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrustPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43DCF91E2B45CB008792CB /* TrustPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrustPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43DCFC1E2B45CB008792CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F43DCFE1E2B45CB008792CB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +37,9 @@
 		1F43DD141E2B4F16008792CB /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		1F43DD161E2B5395008792CB /* iu_headphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iu_headphone.png; path = images/iu_headphone.png; sourceTree = "<group>"; };
 		1F43DD181E2B5A40008792CB /* RegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
+		1F55F5E61E489D3100B1DDBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6664EC29F76A30420C2F3011 /* Pods-TrustPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrustPay/Pods-TrustPay.debug.xcconfig"; sourceTree = "<group>"; };
+		ECE252B868FE6636382BE3D1 /* Pods-TrustPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrustPay/Pods-TrustPay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CED4675E8AF64262C84026 /* Pods_TrustPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,8 @@
 			children = (
 				1F43DCFB1E2B45CB008792CB /* TrustPay */,
 				1F43DCFA1E2B45CB008792CB /* Products */,
+				7F51C0B3D8B2A59E944DD7B9 /* Pods */,
+				5DC73C0DF36AA56CE1584A88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +87,26 @@
 				1F43DD101E2B4D68008792CB /* ThirdViewcontroller.swift */,
 				1F43DD121E2B4F03008792CB /* FourthViewController.swift */,
 				1F43DD141E2B4F16008792CB /* FifthViewController.swift */,
+				1F55F5E61E489D3100B1DDBB /* GoogleService-Info.plist */,
 			);
 			path = TrustPay;
+			sourceTree = "<group>";
+		};
+		5DC73C0DF36AA56CE1584A88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12583115ABE99F03ED588D7E /* Pods_TrustPay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F51C0B3D8B2A59E944DD7B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6664EC29F76A30420C2F3011 /* Pods-TrustPay.debug.xcconfig */,
+				ECE252B868FE6636382BE3D1 /* Pods-TrustPay.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F43DD0D1E2B45CB008792CB /* Build configuration list for PBXNativeTarget "TrustPay" */;
 			buildPhases = (
+				2FA53D29D7500F9041214EA3 /* [CP] Check Pods Manifest.lock */,
 				1F43DCF51E2B45CB008792CB /* Sources */,
 				1F43DCF61E2B45CB008792CB /* Frameworks */,
 				1F43DCF71E2B45CB008792CB /* Resources */,
+				2F3898A3D25222E567B3B4DC /* [CP] Embed Pods Frameworks */,
+				D034493CB97D49376BA144F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,12 +173,61 @@
 			files = (
 				1F43DD171E2B5395008792CB /* iu_headphone.png in Resources */,
 				1F43DD091E2B45CB008792CB /* LaunchScreen.storyboard in Resources */,
+				1F55F5E71E489D3100B1DDBB /* GoogleService-Info.plist in Resources */,
 				1F43DD061E2B45CB008792CB /* Assets.xcassets in Resources */,
 				1F43DD041E2B45CB008792CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F3898A3D25222E567B3B4DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrustPay/Pods-TrustPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FA53D29D7500F9041214EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D034493CB97D49376BA144F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrustPay/Pods-TrustPay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F43DCF51E2B45CB008792CB /* Sources */ = {
@@ -282,6 +361,7 @@
 		};
 		1F43DD0E1E2B45CB008792CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6664EC29F76A30420C2F3011 /* Pods-TrustPay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrustPay/Info.plist;
@@ -294,6 +374,7 @@
 		};
 		1F43DD0F1E2B45CB008792CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE252B868FE6636382BE3D1 /* Pods-TrustPay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrustPay/Info.plist;
@@ -323,6 +404,7 @@
 				1F43DD0F1E2B45CB008792CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
