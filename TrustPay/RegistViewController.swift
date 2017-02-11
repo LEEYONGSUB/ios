@@ -175,4 +175,12 @@ class RegistViewController: UIViewController, UINavigationControllerDelegate, UI
             myAlert(title: "Photo album inaccessable", message: "Application cannot access the photo album.")
         }
     }
+
+    @IBAction func btnConfirm(_ sender: Any) {
+        print("Pressed btnConfirm button")
+        print("id: ", txtFieldID.text as Any)
+        print("password1: ", txtFieldPassword1.text as Any)
+        print("password2: ", txtFieldPassword2.text as Any)
+        print("phone num: ", txtFieldPhoneNumber.text as Any)
+    }
 }
